@@ -2,7 +2,6 @@ package com.gildedrose;
 
 import org.approvaltests.combinations.CombinationApprovals;
 import org.approvaltests.legacycode.Range;
-import org.approvaltests.reporters.JunitReporter;
 import org.approvaltests.reporters.UseReporter;
 import org.approvaltests.reporters.intellij.IntelliJReporter;
 import org.junit.jupiter.api.Test;
@@ -10,7 +9,7 @@ import org.junit.jupiter.api.Test;
 @UseReporter(IntelliJReporter.class)
 public class GildedRoseApprovalTest {
     @Test
-    void testAllCombinations() throws Exception {
+    void testAllCombinations() {
 
         String[] items = { "Foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert",
                 "Sulfuras, Hand of Ragnaros", "Conjured" };
